@@ -1,0 +1,44 @@
+# ==============================================================================
+# LangChain WordPress RAG Project - Requirements
+# ==============================================================================
+
+# --- LangChain Core Ecosystem ---
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+
+# --- LLM & Embeddings Integrations ---
+# Ollama integration for local LLM inference & Ollama embeddings
+langchain-ollama>=0.2.0
+ollama>=0.4.0
+
+# HuggingFace integration for local Sentence Transformers embeddings
+langchain-huggingface>=0.1.0
+sentence-transformers>=3.0.0
+transformers>=4.40.0
+torch>=2.2.0
+
+# --- Vector Database / Storage ---
+# ChromaDB (persistent local vector store)
+langchain-chroma>=0.1.4
+chromadb>=0.5.0
+
+# FAISS (in-memory fast similarity search alternative)
+faiss-cpu>=1.8.0
+
+# --- WordPress REST API Ingestion & HTML Processing ---
+requests>=2.31.0
+urllib3>=2.0.0
+beautifulsoup4>=4.12.0
+html2text>=2024.2.26
+lxml>=5.0.0
+
+# --- Environment & Settings Management ---
+python-dotenv>=1.0.0
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+
+# --- Utilities & Progress Tracking ---
+tqdm>=4.66.0
+rich>=13.7.0
