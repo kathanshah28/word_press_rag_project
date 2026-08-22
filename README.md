@@ -160,6 +160,20 @@ You can also pass a direct query:
 python generation/generator.py "How do I schedule maintenance for the UltraBlend 3000?"
 ```
 
+### 🛠️ Debug Mode (`--debug`)
+Run the generator with `--debug` (or `-d`) to inspect:
+1. **Preprocessed / normalized query**
+2. **Top-k retrieved chunks with similarity scores and titles**
+3. **The exact rendered prompt sent to the LLM**
+
+```bash
+# Debug single query
+python generation/generator.py --debug "What is the warranty period?"
+
+# Or launch interactive chat in debug mode (or type :debug during chat)
+python generation/generator.py --debug
+```
+
 ---
 
 ## 🛡️ Anti-Hallucination Guardrail Demo
